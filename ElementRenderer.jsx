@@ -104,17 +104,6 @@ export default function ElementRenderer({ element, typeConfig }) {
     );
   }
 
-  if (type_name === "qodhjwqodqhjoihjdo") {
-    return (
-      <div
-        className="overfow-hidden w-full h-full"
-        style={{
-          transform: props.rotation ? `rotate(${props.rotation}deg)` : undefined,
-        }}
-      />
-    );
-  }
-
   // Для кастомных типов с children
   if (props.children && Array.isArray(props.children)) {
     return (
