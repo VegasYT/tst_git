@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function ElementRenderer({ element, typeConfig }) {
   const { type_name, props = {} } = element;
 
@@ -100,6 +99,17 @@ export default function ElementRenderer({ element, typeConfig }) {
           borderStyle: props.borderStyle,
           borderRadius: element.borderRadius,
           backgroundColor: props.backgroundColor,
+        }}
+      />
+    );
+  }
+
+  if (type_name === "qodhjwqodqhjoihjdo") {
+    return (
+      <div
+        className="overfow-hidden w-full h-full"
+        style={{
+          transform: props.rotation ? `rotate(${props.rotation}deg)` : undefined,
         }}
       />
     );
